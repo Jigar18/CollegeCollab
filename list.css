@@ -1,0 +1,138 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF0E4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #555;
+  }
+  
+  .buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #FF8551;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+  
+  #postContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .post {
+    width: 600px; /* Adjust the width as per your preference */
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .post h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .post p {
+    color: #555;
+  }
+  
+  .post img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .post {
+      width: 100%;
+    }
+  }
+
+.messageBox {
+    margin-top: 10px;
+  }
+  
+  .messageBox input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .messageBox button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Add this CSS code to your existing list.css file */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .actions button {
+    padding: 8px 12px;
+    background-color: #425a5f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 2px;
+  }
+  
+  .actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  .messageBox {
+    margin-top: 10px;
+  }
+  
+  .messageBox input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .messageBox button {
+    margin-top: 10px;
+  }
+
+  .logo{
+    height: 0.1px;
+    width: px;
+  }
+
+  #enrolledButton{
+    margin-left: 10px;
+    color: #d5d3c1;
+  }

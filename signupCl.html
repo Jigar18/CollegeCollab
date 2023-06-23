@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Signup</title>
+  <link rel="stylesheet" type="text/css" href="signupCl.css">
+</head>
+<body>
+  <div class="signup-box">
+    <h2>College Signup</h2>
+    <form action="stream.html">
+      <label for="name">College Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Contact Number:</label>
+      <input type="tel" id="phone1" name="phone1" pattern="[0-9]{10}" required>
+
+      <label for="student-count">Student Count:</label>
+      <input type="text" id="student-count" name="student-count" required>
+
+      <label for="proof">Proof of Accreditation:</label>
+      <input type="file" id="proof" name="proof" accept="image/*" required>
+
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+</body>
+</html>

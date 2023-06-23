@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CollegeCollab</title>
+  <style>
+    #menu {
+      list-style: none;
+      padding: 0;
+    }
+
+    #menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div id="header">
+    <h1>CollegeCollab</h1>
+  </div>
+  
+  <div id="menu">
+    <ul>
+      <li>
+        <input type="radio" id="student" name="user-type" value="student" onclick="redirectToSignupPageSt()">
+        <label for="student">Student</label>
+      </li>
+      <li>
+        <input type="radio" id="college" name="user-type" value="college" onclick="redirectToSignupPageCl()">
+        <label for="college">College</label>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    function redirectToSignupPageSt() {
+      window.location.href = "signupSt.html";
+    }
+  </script>
+  <script>
+    function redirectToSignupPageCl() {
+      window.location.href = "signupCl.html";
+    }
+  </script>
+</body>
+</html>
