@@ -23,25 +23,37 @@
   <div id="menu">
     <ul>
       <li>
-        <input type="radio" id="student" name="user-type" value="student" onclick="redirectToSignupPageSt()">
+        <input type="radio" id="student" name="user-type" value="student">
         <label for="student">Student</label>
       </li>
       <li>
-        <input type="radio" id="college" name="user-type" value="college" onclick="redirectToSignupPageCl()">
+        <input type="radio" id="college" name="user-type" value="college">
         <label for="college">College</label>
       </li>
     </ul>
   </div>
 
+  <button id="continueBtn" disabled onclick="continueToNextPage()">Continue</button>
+
   <script>
-    function redirectToSignupPageSt() {
-      window.location.href = "signupSt.html";
+    var studentRadio = document.getElementById("student");
+    var collegeRadio = document.getElementById("college");
+    var continueBtn = document.getElementById("continueBtn");
+
+    function continueToNextPage() {
+      if (studentRadio.checked) {
+        window.location.href = "signupSt.html";
+      } else if (collegeRadio.checked) {
+        window.location.href = "signupCl.html";
+      }
     }
-  </script>
-  <script>
-    function redirectToSignupPageCl() {
-      window.location.href = "signupCl.html";
+
+    function enableContinueButton() {
+      continueBtn.disabled = false;
     }
+
+    studentRadio.addEventListener("click", enableContinueButton);
+    collegeRadio.addEventListener("click", enableContinueButton);
   </script>
 </body>
 </html>
